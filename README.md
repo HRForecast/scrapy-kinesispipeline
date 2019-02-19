@@ -18,7 +18,7 @@ pip install scrapy-kinesispipeline
 
 In your `settings.py` file, add the following to `ITEM_PIPELINES`:
 
-```json
+```
 ITEM_PIPELINES = {
     ...
     'kinesispipeline.KinesisPipeline': 100,
