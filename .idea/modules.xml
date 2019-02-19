@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/scrapy-kenisispipeline.iml" filepath="$PROJECT_DIR$/scrapy-kenisispipeline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scrapy-kinesispipeline.iml" filepath="$PROJECT_DIR$/scrapy-kinesispipeline.iml" />
     </modules>
   </component>
 </project>
