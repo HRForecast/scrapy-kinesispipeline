@@ -39,9 +39,6 @@ class KinesisPipeline:
         """
         Callback function when spider is open.
         """
-        # Store timestamp to replace {time} in S3PIPELINE_URL
-
-        # self.kinesis_agg.on_record_complete(self._send_record)
 
     def close_spider(self, spider):
         """
@@ -61,8 +58,6 @@ class KinesisPipeline:
 
         partition_key, explicit_hash_key, raw_data = agg_record.get_contents()
 
-        # six.print_('Submitting record with EHK=%s NumRecords=%d NumBytes=%d' %
-        #            (explicit_hash_key, agg_record.get_num_user_records(), agg_record.get_size_bytes()))
         try:
             self.kinesis.put_record(StreamName=self.stream_name,
                                     Data=raw_data,
