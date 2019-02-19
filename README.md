@@ -8,6 +8,31 @@
 
 ## Install
 
+Install using pip:
+
+```bash
+pip install scrapy-kinesispipeline
+```
+
+## Usage
+
+In your `settings.py` file, add the following to `ITEM_PIPELINES`:
+
+```json
+ITEM_PIPELINES = {
+    ...
+    'kinesispipeline.KinesisPipeline': 100,
+    ...
+}
+```
+
+Also, set the following variables in `settings.py`:
+
+```
+KINESISSTREAM_NAME = '<your_kinesis_stream_name>'
+KENISISPARTITION_KEY = '<your_partition_key>'
+```
+
 ## Development
 
 ### Test
